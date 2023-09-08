@@ -5,8 +5,11 @@ description = ""
 authors = ["zkan <zkan.cs@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10.0"
 google-cloud-storage = "^2.8.0"
+Scrapy = "^2.8.0"
+pandas = "^1.5.3"
+jupyter = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 

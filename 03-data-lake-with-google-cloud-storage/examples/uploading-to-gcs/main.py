@@ -6,7 +6,7 @@ from google.api_core import exceptions
 from google.cloud import storage
 from google.oauth2 import service_account
 
-
+#blob is object
 def upload_blob(bucket_name, source_file_name, destination_blob_name):
     """Uploads a file to the bucket."""
     # The ID of your GCS bucket
@@ -16,10 +16,10 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
     # The ID of your GCS object
     # destination_blob_name = "storage-object-name"
 
-    keyfile = os.environ.get("KEYFILE_PATH")
+    keyfile = os.environ.get("deb2-deb2-loading-file-to-gcs-deb2-395909-f7c5acac4d2d.json")
     service_account_info = json.load(open(keyfile))
     credentials = service_account.Credentials.from_service_account_info(service_account_info)
-    project_id = "dataengineercafe"
+    project_id = "deb2-395909"
 
     storage_client = storage.Client(
         project=project_id,
